@@ -1,7 +1,7 @@
 defmodule BarAppWeb.AddDrinkLive do
   use BarAppWeb, :live_view
 
-  alias BarApp.AddDrink
+  # alias BarApp.AddDrink
 
   def mount(_params, _session, socket) do
     socket = assign(socket, name: "", description: "", image_path: "")
