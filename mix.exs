@@ -41,12 +41,12 @@ defmodule BarApp.MixProject do
       {:esbuild, "~> 0.8", runtime: Mix.env() == :dev},
       {:tailwind, "~> 0.2", runtime: Mix.env() == :dev},
       {:heroicons,
-        github: "tailwindlabs/heroicons",
-        tag: "v2.1.1",
-        sparse: "optimized",
-        app: false,
-        compile: false,
-        depth: 1},
+       github: "tailwindlabs/heroicons",
+       tag: "v2.1.1",
+       sparse: "optimized",
+       app: false,
+       compile: false,
+       depth: 1},
       {:swoosh, "~> 1.5"},
       {:finch, "~> 0.13"},
       {:telemetry_metrics, "~> 1.0"},
@@ -55,7 +55,6 @@ defmodule BarApp.MixProject do
       {:jason, "~> 1.2"},
       {:dns_cluster, "~> 0.1.1"},
       {:bandit, "~> 1.2"},
-
       {:ecto_sql, "~> 3.11"},
       {:ecto_sqlite3, "~> 0.15"}
     ]

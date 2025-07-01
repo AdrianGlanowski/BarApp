@@ -7,6 +7,7 @@ defmodule BarApp.Repo.Migrations.CreateDrinks do
       add :image_path, :string, null: true
       add :description, :text, null: true
     end
+
     create index("drinks", [:name])
     create index("drinks", [:image_path])
   end

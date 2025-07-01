@@ -17,7 +17,8 @@ defmodule BarAppWeb.Router do
   scope "/", BarAppWeb do
     pipe_through :browser
 
-    live "/", DrinksLive
+    live "/", DrinkLive
+    live "/add_drink", AddDrinkLive
   end
 
   # Other scopes may use custom stacks.

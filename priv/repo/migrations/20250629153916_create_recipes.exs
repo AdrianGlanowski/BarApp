@@ -4,7 +4,7 @@ defmodule BarApp.Repo.Migrations.CreateRecipes do
   def change do
     create table(:recipes) do
       add :drink_id, references(:drinks, type: :integer, column: :id)
-      add :drink_id, references(:ingredients, type: :integer, column: :id)
+      add :ingredient_id, references(:ingredients, type: :integer, column: :id)
       add :quantity, :float
     end
   end

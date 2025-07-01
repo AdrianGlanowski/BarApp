@@ -8,7 +8,8 @@ defmodule BarApp.Repo.Migrations.CreateIngredients do
       add :image_path, :string, null: true
       add :description, :text, null: true
     end
-    create index("ingredients_name", [:name])
-    create index("ingredients_image", [:image_path])
+
+    create index("ingredients", [:name])
+    create index("ingredients", [:image_path])
   end
 end

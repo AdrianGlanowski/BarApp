@@ -17,8 +17,7 @@ defmodule BarApp.Application do
       # Start a worker by calling: BarApp.Worker.start_link(arg)
       # {BarApp.Worker, arg},
       # Start to serve requests, typically the last entry
-      BarAppWeb.Endpoint,
-      BarApp.Repo
+      BarAppWeb.Endpoint
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
